@@ -1,10 +1,10 @@
 "use client";
 
-import { DollarSign, TrendingUp, Clock, Users } from "lucide-react";
+import { Cpu, TrendingUp, Clock, Users } from "lucide-react";
 import { AnimateOnScroll } from "./useScrollAnimation";
 
 const stats = [
-  { icon: DollarSign, value: "$2.4M+", label: "Client Savings", hasAsterisk: true },
+  { icon: Cpu, value: "10+", label: "AI Systems Deployed", hasAsterisk: false },
   { icon: TrendingUp, value: "180%+", label: "Typical ROI", hasAsterisk: true },
   { icon: Clock, value: "2-8", label: "Weeks to MVP", hasAsterisk: false },
   { icon: Users, value: "$5K+", label: "MRR from Built Software", hasAsterisk: true },
