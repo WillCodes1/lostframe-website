@@ -2,18 +2,19 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import {
-  Sparkles,
   Rocket,
-  Globe,
+  Search,
   Database,
-  Brain,
+  Cpu,
+  Sparkles,
+  CheckCircle2,
   TrendingUp,
   DollarSign,
-  Target,
   Zap,
-  CheckCircle2,
+  Target,
   BarChart3,
-  Cpu,
+  Brain,
+  Globe,
 } from "lucide-react";
 import { AnimateOnScroll } from "./useScrollAnimation";
 
@@ -230,6 +231,17 @@ function VentureCard({ venture, delay }: { venture: VentureResult; delay: number
   );
 }
 
+const IconMap: Record<string, React.ElementType> = {
+  TrendingUp,
+  DollarSign,
+  Zap,
+  Database,
+  Target,
+  Cpu,
+  BarChart3,
+  Brain,
+};
+
 export default function AiDemo() {
   const [industry, setIndustry] = useState("");
   const [running, setRunning] = useState(false);
@@ -259,6 +271,21 @@ export default function AiDemo() {
     const analysisPhases = getPhases(industry);
     setPhases(analysisPhases);
 
+    // Start API fetch immediately
+    const fetchPromise = fetch("/api/analyze", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ industry }),
+    }).then(async (res) => {
+      if (!res.ok) throw new Error("API Error");
+      const json = await res.json();
+      if (!json.success) throw new Error("API Error");
+      return json.data;
+    }).catch((err) => {
+      console.error("Failed to fetch real data, using fallback.", err);
+      return null;
+    });
+
     let allLines: { text: string; delay: number }[] = [];
     let cumulativeDelay = 0;
 
@@ -284,7 +311,29 @@ export default function AiDemo() {
     setCurrentPhase(analysisPhases.length);
 
     await new Promise((r) => setTimeout(r, 500));
-    setResults(getResults(industry));
+    
+    // Wait for the API result
+    const apiResult = await fetchPromise;
+    
+    if (apiResult && Array.isArray(apiResult)) {
+      // Map JSON to VentureResult
+      const mappedResults: VentureResult[] = apiResult.map((v: any) => ({
+        name: v.name,
+        desc: v.desc,
+        metrics: v.metrics.map((m: any) => ({
+          label: m.label,
+          value: m.value,
+          icon: IconMap[m.iconName] || Zap,
+        })),
+        techStack: v.techStack,
+        timeline: v.timeline,
+        roi: v.roi,
+      }));
+      setResults(mappedResults);
+    } else {
+      setResults(getResults(industry));
+    }
+    
     setRunning(false);
   };
 
