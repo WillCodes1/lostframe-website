@@ -36,7 +36,7 @@ export default function Hero({ onBookMeeting }: { onBookMeeting?: () => void }) 
       </div>
 
       <div className="relative max-w-5xl mx-auto px-6 text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-center whitespace-nowrap pb-3">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-center whitespace-nowrap">
           <span>Architecting</span>{" "}
           <span
             className={`gold-shimmer-text inline-block transition-all duration-400 ${
