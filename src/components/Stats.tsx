@@ -1,13 +1,13 @@
 "use client";
 
-import { Cpu, TrendingUp, Clock, Users } from "lucide-react";
+import { Cpu, TrendingUp, Clock, Globe } from "lucide-react";
 import { AnimateOnScroll } from "./useScrollAnimation";
 
 const stats = [
   { icon: Cpu, value: "10+", label: "AI Systems Deployed", hasAsterisk: false },
   { icon: TrendingUp, value: "180%+", label: "Typical ROI", hasAsterisk: true },
   { icon: Clock, value: "2-8", label: "Weeks to MVP", hasAsterisk: false },
-  { icon: Users, value: "$5K+", label: "MRR from Built Software", hasAsterisk: true },
+  { icon: Globe, value: "5+", label: "Industries Served", hasAsterisk: false },
 ];
 
 export default function Stats() {
