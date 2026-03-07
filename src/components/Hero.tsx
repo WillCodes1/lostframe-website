@@ -34,16 +34,14 @@ export default function Hero({ onBookMeeting }: { onBookMeeting?: () => void }) 
       <div className="absolute top-2/3 left-1/6 w-2 h-2 rounded-full bg-gold/20 animate-float" style={{ animationDelay: "5s" }} />
 
       <div className="relative max-w-5xl mx-auto px-6 text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-center whitespace-nowrap">
           <span>Architecting</span>{" "}
-          <span className="inline-block w-[4.8em] sm:w-[5.2em] text-left">
-            <span
-              className={`gold-shimmer-text inline-block transition-all duration-400 ${
-                fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-              }`}
-            >
-              {heroWords[wordIndex]}
-            </span>
+          <span
+            className={`gold-shimmer-text inline-block transition-all duration-400 ${
+              fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+            }`}
+          >
+            {heroWords[wordIndex]}
           </span>
         </h1>
 

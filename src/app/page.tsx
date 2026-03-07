@@ -17,7 +17,7 @@ export default function Home() {
   const [bookingOpen, setBookingOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
       <main>
         <Hero onBookMeeting={() => setBookingOpen(true)} />
