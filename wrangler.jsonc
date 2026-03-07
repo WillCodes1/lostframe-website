@@ -7,5 +7,11 @@
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
-  }
+  },
+  "routes": [
+    { "pattern": "lostframe.ai/*", "zone_name": "lostframe.ai" },
+    { "pattern": "www.lostframe.ai/*", "zone_name": "lostframe.ai" },
+    { "pattern": "lostframe.dev/*", "zone_name": "lostframe.dev" },
+    { "pattern": "www.lostframe.dev/*", "zone_name": "lostframe.dev" }
+  ]
 }
