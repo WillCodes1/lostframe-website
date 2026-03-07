@@ -27,7 +27,7 @@ For each product, provide:
 Return the response as a JSON array of these 3 objects. Do not include markdown formatting like \`\`\`json, just return the raw JSON array.`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3.1-flash-lite-preview',
       contents: prompt,
       config: {
         temperature: 0.7,
