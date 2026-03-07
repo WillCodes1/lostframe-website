@@ -64,7 +64,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Contact Form */}
             <AnimateOnScroll animation="fade-left" delay={100}>
-              <div className="bg-white rounded-2xl border border-border p-8 shadow-sm">
+              <div className="bg-white rounded-2xl border border-border p-5 md:p-8 shadow-sm">
                 {submitted ? (
                   <div className="flex flex-col items-center justify-center py-12 text-center">
                     <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mb-4">
@@ -176,7 +176,7 @@ export default function Contact() {
             {/* Book a Meeting Card */}
             <AnimateOnScroll animation="fade-right" delay={200}>
               <div className="flex flex-col gap-6">
-                <div className="tilt-card bg-white/40 backdrop-blur-2xl border border-white/60 rounded-2xl p-8 shadow-xl shadow-foreground/5 flex-1">
+                <div className="tilt-card bg-white/40 backdrop-blur-2xl border border-white/60 rounded-2xl p-5 md:p-8 shadow-xl shadow-foreground/5 flex-1">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 rounded-lg bg-foreground/5 border border-foreground/10">
                       <Calendar className="w-5 h-5 text-foreground" />

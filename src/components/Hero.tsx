@@ -34,9 +34,9 @@ export default function Hero({ onBookMeeting }: { onBookMeeting?: () => void }) 
       <div className="absolute top-2/3 left-1/6 w-2 h-2 rounded-full bg-gold/20 animate-float" style={{ animationDelay: "5s" }} />
 
       <div className="relative max-w-5xl mx-auto px-6 text-center">
-        <h1 className="flex items-baseline justify-center gap-[0.3em] text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight whitespace-nowrap">
-          <span>Architecting</span>
-          <span className="inline-block w-[5.2em] text-left">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-center">
+          <span>Architecting</span>{" "}
+          <span className="inline-block w-[4.8em] sm:w-[5.2em] text-left">
             <span
               className={`gold-shimmer-text inline-block transition-all duration-400 ${
                 fade ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
@@ -47,13 +47,13 @@ export default function Hero({ onBookMeeting }: { onBookMeeting?: () => void }) 
           </span>
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+        <p className="text-base md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto px-2 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
           AI-Powered Solutions Delivering{" "}
           <span className="gold-gradient-text font-semibold">$2.4M+</span> in
           Proven Savings
         </p>
 
-        <p className="text-base text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: "400ms" }}>
+        <p className="text-sm md:text-base text-muted-foreground mb-10 max-w-2xl mx-auto px-2 leading-relaxed animate-fade-in-up" style={{ animationDelay: "400ms" }}>
           We don&apos;t just build AI chatbots—we architect full-stack software
           suites powered by AI, data scraping, and intelligent automation like
           you&apos;ve never seen before. We&apos;re your strategic technology

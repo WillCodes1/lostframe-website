@@ -172,7 +172,7 @@ function PortfolioCard({
   const displayItems = expanded ? items : items.slice(0, 4);
 
   return (
-    <div className="group relative p-8 rounded-3xl border border-gold/20 bg-gradient-to-br from-white to-gold/5 backdrop-blur-sm transition-all duration-500 shadow-lg shadow-gold/5 hover:shadow-2xl hover:shadow-gold/10 hover:border-gold/40">
+    <div className="group relative p-5 md:p-8 rounded-3xl border border-gold/20 bg-gradient-to-br from-white to-gold/5 backdrop-blur-sm transition-all duration-500 shadow-lg shadow-gold/5 hover:shadow-2xl hover:shadow-gold/10 hover:border-gold/40">
       <h3 className="text-2xl font-bold mb-2 text-foreground">{title}</h3>
       <p className="text-muted-foreground mb-6">{subtitle}</p>
       <div className="space-y-3">

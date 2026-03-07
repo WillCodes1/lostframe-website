@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { GoogleGenAI } from '@google/genai';
 
 export async function POST(req: Request) {
   try {
@@ -9,7 +8,6 @@ export async function POST(req: Request) {
     if (!apiKey) {
       return NextResponse.json({ error: 'API key not configured' }, { status: 500 });
     }
-    const ai = new GoogleGenAI({ apiKey });
 
     if (!industry || typeof industry !== 'string') {
       return NextResponse.json(
@@ -30,17 +28,28 @@ For each product, provide:
 
 Return the response as a JSON array of these 3 objects. Do not include markdown formatting like \`\`\`json, just return the raw JSON array.`;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-3.1-flash-lite-preview',
-      contents: prompt,
-      config: {
-        temperature: 0.7,
+    const geminiRes = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { temperature: 0.7 },
+        }),
       }
-    });
+    );
 
-    const text = response.text;
+    if (!geminiRes.ok) {
+      const errBody = await geminiRes.text();
+      console.error("Gemini API error:", geminiRes.status, errBody);
+      throw new Error(`Gemini API returned ${geminiRes.status}`);
+    }
+
+    const geminiData = await geminiRes.json();
+    const text: string = geminiData?.candidates?.[0]?.content?.parts?.[0]?.text ?? '';
     if (!text) {
-      throw new Error("No response from Gemini");
+      throw new Error("No text in Gemini response");
     }
 
     // Clean up potential markdown wrapper
