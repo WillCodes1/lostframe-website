@@ -21,17 +21,19 @@ export default function Hero({ onBookMeeting }: { onBookMeeting?: () => void }) 
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-16">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-muted/30" />
 
-      {/* Animated floating particles */}
-      <div className="absolute top-1/4 left-1/5 w-2 h-2 rounded-full bg-gold/30 animate-float" />
-      <div className="absolute top-1/6 right-1/4 w-3 h-3 rounded-full bg-gold/10 animate-float" style={{ animationDelay: "1s" }} />
-      <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 rounded-full bg-gold/20 animate-float" style={{ animationDelay: "2s" }} />
-      <div className="absolute bottom-1/4 right-1/5 w-2.5 h-2.5 rounded-full bg-gold/15 animate-float" style={{ animationDelay: "3s" }} />
-      <div className="absolute bottom-1/3 left-1/3 w-1 h-1 rounded-full bg-gold/25 animate-float" style={{ animationDelay: "4s" }} />
-      <div className="absolute top-2/3 left-1/6 w-2 h-2 rounded-full bg-gold/20 animate-float" style={{ animationDelay: "5s" }} />
+      {/* Animated floating particles — clipped to section bounds */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/5 w-2 h-2 rounded-full bg-gold/30 animate-float" />
+        <div className="absolute top-1/6 right-1/4 w-3 h-3 rounded-full bg-gold/10 animate-float" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-1/3 right-1/3 w-1.5 h-1.5 rounded-full bg-gold/20 animate-float" style={{ animationDelay: "2s" }} />
+        <div className="absolute bottom-1/4 right-1/5 w-2.5 h-2.5 rounded-full bg-gold/15 animate-float" style={{ animationDelay: "3s" }} />
+        <div className="absolute bottom-1/3 left-1/3 w-1 h-1 rounded-full bg-gold/25 animate-float" style={{ animationDelay: "4s" }} />
+        <div className="absolute top-2/3 left-1/6 w-2 h-2 rounded-full bg-gold/20 animate-float" style={{ animationDelay: "5s" }} />
+      </div>
 
       <div className="relative max-w-5xl mx-auto px-6 text-center">
         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight text-center whitespace-nowrap pb-3">
