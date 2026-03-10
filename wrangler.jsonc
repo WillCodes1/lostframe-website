@@ -9,6 +9,9 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  "vars": {
+    "NEXT_PUBLIC_WEB3FORMS_KEY": "295f31a1-14b8-49a6-81b9-6a280ce2c1ea"
+  },
   "routes": [
     { "pattern": "lostframe.ai/*", "zone_name": "lostframe.ai" },
     { "pattern": "www.lostframe.ai/*", "zone_name": "lostframe.ai" },

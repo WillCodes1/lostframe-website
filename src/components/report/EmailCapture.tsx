@@ -31,10 +31,11 @@ function useEmailState() {
 
 async function submitEmail(email: string): Promise<boolean> {
   try {
-    const res = await fetch("/api/submit-email", {
+    const res = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
         email,
         subject: "State of AI Report: New Email Signup",
         from_name: "AI Report Email Capture",
