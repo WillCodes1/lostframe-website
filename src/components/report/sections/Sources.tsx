@@ -3,7 +3,7 @@
 import { useState } from "react";
 import FadeIn from "@/components/report/FadeIn";
 import { sources } from "@/data/reportData";
-import { ChevronDown, ExternalLink } from "lucide-react";
+import { ChevronDown, ExternalLink, FileText, Mail } from "lucide-react";
 
 export default function Sources() {
   const [openCategory, setOpenCategory] = useState<string | null>(null);
@@ -41,18 +41,39 @@ export default function Sources() {
               {openCategory === cat.category && (
                 <div className="px-5 pb-4 border-t border-[#e5e2d9]">
                   <div className="grid gap-2 pt-3">
-                    {cat.sources.map((s, i) => (
-                      <a
-                        key={i}
-                        href={s.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm text-[#4a4a5a] hover:text-[#b8860b] transition-colors py-1"
-                      >
-                        <ExternalLink size={12} className="flex-shrink-0 text-[#7a7a85]" />
-                        {s.name}
-                      </a>
-                    ))}
+                    {cat.category === "Methodology & Data Notes" ? (
+                      <>
+                        {cat.sources.map((s, i) => (
+                          <div key={i} className="flex items-start gap-2 text-sm text-[#4a4a5a] py-1">
+                            <FileText size={12} className="flex-shrink-0 text-[#7a7a85] mt-0.5" />
+                            <span>{s.name}</span>
+                          </div>
+                        ))}
+                        <div className="mt-4 pt-4 border-t border-[#e5e2d9]">
+                          <p className="text-xs text-[#7a7a85] mb-3">The full 248,000-word research paper and complete methodology documentation is available upon request.</p>
+                          <a
+                            href="mailto:will@lostframe.ai?subject=Research%20Methodology%20Request&body=Hi%20Will%2C%0A%0AI'd%20like%20to%20request%20access%20to%20the%20full%20research%20methodology%20and%20documentation%20for%20your%202026%20State%20of%20AI%20Report.%0A%0AThank%20you"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#b8860b] text-white text-xs font-semibold hover:bg-[#a07a0a] transition-colors"
+                          >
+                            <Mail size={13} />
+                            Request Full Methodology
+                          </a>
+                        </div>
+                      </>
+                    ) : (
+                      cat.sources.map((s, i) => (
+                        <a
+                          key={i}
+                          href={s.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 text-sm text-[#4a4a5a] hover:text-[#b8860b] transition-colors py-1"
+                        >
+                          <ExternalLink size={12} className="flex-shrink-0 text-[#7a7a85]" />
+                          {s.name}
+                        </a>
+                      ))
+                    )}
                   </div>
                 </div>
               )}
