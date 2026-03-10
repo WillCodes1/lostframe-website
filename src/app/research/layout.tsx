@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
     description:
-      "90% of AI is subsidized. True unemployment is 23.8%. One island controls 92% of chips. A 248,000-word research paper executive summary.",
+      "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
     type: "article",
     authors: ["Will Taubenheim"],
     siteName: "Lost Frame Ventures",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
     description:
-      "90% of AI is subsidized. True unemployment is 23.8%. One island controls 92% of chips. A 248,000-word research paper executive summary.",
+      "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
     images: ["/research-og.png"],
   },
 };
