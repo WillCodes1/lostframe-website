@@ -37,7 +37,7 @@ export default async function Image() {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", zIndex: 10, textAlign: "center", width: "800px" }}>
           
           {/* Top Eyebrow */}
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "40px" }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
             <div style={{ display: "flex", width: "40px", height: "2px", backgroundColor: "#b8860b", marginRight: "16px" }} />
             <div style={{ display: "flex", fontSize: 22, color: "#b8860b", letterSpacing: "5px", fontWeight: 700, textTransform: "uppercase" }}>
               2026 INTELLIGENCE BRIEFING
@@ -45,26 +45,26 @@ export default async function Image() {
             <div style={{ display: "flex", width: "40px", height: "2px", backgroundColor: "#b8860b", marginLeft: "16px" }} />
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginBottom: "40px" }}>
-            <div style={{ display: "flex", fontSize: 68, fontWeight: 800, color: "#1a1a2e", letterSpacing: "-1px", marginBottom: "16px" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginBottom: "24px" }}>
+            <div style={{ display: "flex", fontSize: 56, fontWeight: 800, color: "#1a1a2e", letterSpacing: "-1px", marginBottom: "10px" }}>
               The AI economy is
             </div>
-            <div style={{ display: "flex", color: "#d4af37", fontSize: 88, fontWeight: 900, letterSpacing: "-2px" }}>
+            <div style={{ display: "flex", color: "#d4af37", fontSize: 72, fontWeight: 900, letterSpacing: "-1px" }}>
               90% subsidized.
             </div>
           </div>
           
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "16px" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "10px" }}>
               <div style={{ display: "flex", width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#b8860b", marginRight: "16px" }} />
-              <div style={{ display: "flex", fontSize: 38, fontWeight: 500, color: "#4a4a5a" }}>
+              <div style={{ display: "flex", fontSize: 30, fontWeight: 500, color: "#4a4a5a" }}>
                 One island controls 92% of the chips.
               </div>
               <div style={{ display: "flex", width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#b8860b", marginLeft: "16px" }} />
             </div>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
               <div style={{ display: "flex", width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#b8860b", marginRight: "16px" }} />
-              <div style={{ display: "flex", fontSize: 38, fontWeight: 500, color: "#4a4a5a" }}>
+              <div style={{ display: "flex", fontSize: 30, fontWeight: 500, color: "#4a4a5a" }}>
                 True US unemployment is 23.8%.
               </div>
               <div style={{ display: "flex", width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#b8860b", marginLeft: "16px" }} />
@@ -72,15 +72,15 @@ export default async function Image() {
           </div>
 
           {/* Bottom Branding */}
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginTop: "60px" }}>
-            <div style={{ display: "flex", fontSize: 30, fontWeight: 700, color: "#1a1a2e", marginBottom: "12px" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", marginTop: "32px" }}>
+            <div style={{ display: "flex", fontSize: 24, fontWeight: 700, color: "#1a1a2e", marginBottom: "8px" }}>
               The Foundations Are Cracking
             </div>
-            <div style={{ display: "flex", fontSize: 22, color: "#7a7a85", marginBottom: "20px" }}>
+            <div style={{ display: "flex", fontSize: 18, color: "#7a7a85", marginBottom: "12px" }}>
               248,000-Word Proprietary Research Paper
             </div>
-            <div style={{ display: "flex", padding: "12px 24px", border: "1px solid rgba(184,134,11,0.4)", backgroundColor: "#fff", borderRadius: "8px" }}>
-              <div style={{ display: "flex", fontSize: 22, color: "#b8860b", fontWeight: 700, letterSpacing: "2px", textTransform: "uppercase" }}>
+            <div style={{ display: "flex", padding: "8px 18px", border: "1px solid rgba(184,134,11,0.4)", backgroundColor: "#fff", borderRadius: "8px" }}>
+              <div style={{ display: "flex", fontSize: 18, color: "#b8860b", fontWeight: 700, letterSpacing: "1px", textTransform: "uppercase" }}>
                 LOST FRAME VENTURES
               </div>
             </div>
