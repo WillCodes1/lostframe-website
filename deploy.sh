@@ -18,7 +18,7 @@ sed -i '' 's|href="/students"|href="/research/students"|g' src/components/report
 sed -i '' 's|href="/"|href="/research"|g' src/components/report/StudentContent.tsx || true
 
 echo "☁️ Building and deploying to Cloudflare..."
-npx opennextjs-cloudflare deploy
+npm run deploy
 
 echo "📦 Committing to GitHub..."
 git add -A

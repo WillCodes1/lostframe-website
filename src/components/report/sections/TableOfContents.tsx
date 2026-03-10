@@ -57,8 +57,10 @@ const sections = [
 
 const collegeGuide = {
   number: "08",
-  href: "/students",
-  title: "The AI Reality Check for College Students",
+  id: "college",
+  title: "Special Report: The AI Reality Check for College Students",
+  subtitle: "Why 90% of degrees are being devalued and what to do about it.",
+  href: "/research/students",
   hook: "Separate add-on guide — your degree is being devalued in real time",
   accent: "#b8860b",
 };
