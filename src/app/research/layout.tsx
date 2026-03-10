@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import PasswordGate from "@/components/report/PasswordGate";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lostframe.ai"),
@@ -71,7 +70,7 @@ export default function ResearchLayout({
 }) {
   return (
     <div className="bg-[#fafaf8] text-[#1a1a2e]">
-      <PasswordGate>{children}</PasswordGate>
+      {children}
     </div>
   );
 }

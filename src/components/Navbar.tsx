@@ -25,19 +25,25 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           <a
-            href="#ai-demo"
+            href="/research"
+            className="animated-underline text-sm font-medium text-[#b8860b] hover:text-[#a07a0a] transition-colors"
+          >
+            Research
+          </a>
+          <a
+            href="/#ai-demo"
             className="animated-underline text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             AI Demo
           </a>
           <a
-            href="#portfolio"
+            href="/#portfolio"
             className="animated-underline text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Portfolio
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="animated-underline text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Contact
@@ -59,21 +65,28 @@ export default function Navbar() {
         <div className="md:hidden bg-white border-t border-border">
           <div className="px-6 py-4 flex flex-col gap-4">
             <a
-              href="#ai-demo"
+              href="/research"
+              className="text-sm font-medium text-[#b8860b] hover:text-[#a07a0a] transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              Research
+            </a>
+            <a
+              href="/#ai-demo"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               AI Demo
             </a>
             <a
-              href="#portfolio"
+              href="/#portfolio"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileOpen(false)}
             >
               Portfolio
             </a>
             <a
-              href="#contact"
+              href="/#contact"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setMobileOpen(false)}
             >
