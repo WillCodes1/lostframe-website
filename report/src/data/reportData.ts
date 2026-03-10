@@ -6,12 +6,13 @@
 export const sections = [
   { id: "hero", label: "Introduction", number: 0 },
   { id: "human-cost", label: "The Human Cost", number: 1 },
-  { id: "software-earthquake", label: "The Software Earthquake", number: 2 },
-  { id: "hidden-bill", label: "The Hidden Bill", number: 3 },
-  { id: "silicon-chokepoint", label: "The Silicon Chokepoint", number: 4 },
-  { id: "power-crisis", label: "The Power Crisis", number: 5 },
-  { id: "convergence", label: "The Convergence", number: 6 },
+  { id: "hidden-bill", label: "The Hidden Bill", number: 2 },
+  { id: "silicon-chokepoint", label: "The Silicon Chokepoint", number: 3 },
+  { id: "power-crisis", label: "The Power Crisis", number: 4 },
+  { id: "convergence", label: "The Convergence", number: 5 },
+  { id: "software-earthquake", label: "The Software Earthquake", number: 6 },
   { id: "thesis", label: "The Thesis", number: 7 },
+  { id: "what-to-do", label: "What You Should Do", number: 8 },
 ];
 
 // SECTION 1: The Software Earthquake
