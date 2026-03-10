@@ -57,8 +57,9 @@ function AnimatedMesh() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       const points: { x: number; y: number; wave: number }[] = [];
-      const cols = 18;
-      const rows = 12;
+      const isMobile = canvas.width < 640;
+      const cols = isMobile ? 8 : 18;
+      const rows = isMobile ? 6 : 12;
 
       for (let i = 0; i <= cols; i++) {
         for (let j = 0; j <= rows; j++) {
@@ -109,7 +110,7 @@ function AnimatedMesh() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-[0]" style={{ pointerEvents: "none" }} />;
+  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-[0] blur-[1px] sm:blur-0 opacity-50 sm:opacity-100" style={{ pointerEvents: "none" }} />;
 }
 
 export default function HeroSection() {
@@ -122,10 +123,16 @@ export default function HeroSection() {
       {mounted && <AnimatedMesh />}
 
       {/* Floating orbs */}
-      <FloatingOrb delay={0} duration={20} x="10%" y="20%" size={400} opacity={0.12} />
-      <FloatingOrb delay={3} duration={25} x="70%" y="15%" size={350} opacity={0.08} />
-      <FloatingOrb delay={7} duration={18} x="50%" y="60%" size={450} opacity={0.1} />
-      <FloatingOrb delay={5} duration={22} x="85%" y="70%" size={280} opacity={0.06} />
+      <div className="hidden sm:block">
+        <FloatingOrb delay={0} duration={20} x="10%" y="20%" size={400} opacity={0.12} />
+        <FloatingOrb delay={3} duration={25} x="70%" y="15%" size={350} opacity={0.08} />
+        <FloatingOrb delay={7} duration={18} x="50%" y="60%" size={450} opacity={0.1} />
+        <FloatingOrb delay={5} duration={22} x="85%" y="70%" size={280} opacity={0.06} />
+      </div>
+      <div className="sm:hidden">
+        <FloatingOrb delay={0} duration={20} x="10%" y="20%" size={200} opacity={0.06} />
+        <FloatingOrb delay={5} duration={22} x="70%" y="60%" size={180} opacity={0.05} />
+      </div>
 
       {/* Top fade overlay for depth */}
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#fafaf8] to-transparent z-[1]" />

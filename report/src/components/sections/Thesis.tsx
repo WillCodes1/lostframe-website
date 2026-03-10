@@ -149,12 +149,12 @@ export default function Thesis() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="https://twitter.com/WillTaubenheim"
+                href="https://www.linkedin.com/in/william-taubenheim/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#b8860b] text-white font-semibold hover:bg-[#a07a0a] transition-colors"
               >
-                Follow on X <ExternalLink size={16} />
+                Connect on LinkedIn <ExternalLink size={16} />
               </a>
               <a
                 href="https://lostframe.ai"
@@ -164,9 +164,15 @@ export default function Thesis() {
               >
                 Visit Lost Frame <ExternalLink size={16} />
               </a>
+              <a
+                href="mailto:will@lostframe.ai"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-[#e5e2d9] text-[#1a1a2e] font-semibold hover:border-[#b8860b] hover:bg-[#b8860b]/5 transition-all"
+              >
+                will@lostframe.ai
+              </a>
             </div>
             <ShareInsight
-              text="This is the most comprehensive executive summary of the AI landscape I've read. Based on a 248K-word proprietary research paper, 35+ visualizations, and 200+ sources. By @WillTaubenheim"
+              text="This is the most comprehensive executive summary of the AI landscape I've read. Based on a 248K-word proprietary research paper, 35+ visualizations, and 200+ sources. By Will Taubenheim."
               sectionId="thesis"
             />
           </div>

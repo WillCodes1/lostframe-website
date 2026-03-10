@@ -10,6 +10,7 @@ import Convergence from "@/components/report/sections/Convergence";
 import Thesis from "@/components/report/sections/Thesis";
 import Sources from "@/components/report/sections/Sources";
 import { EmailSlideIn, InlineEmailCapture } from "@/components/report/EmailCapture";
+import ShareBriefing from "@/components/report/ShareBriefing";
 import StudentCTA from "@/components/report/StudentCTA";
 
 export default function ResearchPage() {
@@ -28,6 +29,7 @@ export default function ResearchPage() {
         <InlineEmailCapture />
         <Thesis />
         <StudentCTA />
+        <ShareBriefing />
         <Sources />
       </main>
       <EmailSlideIn />

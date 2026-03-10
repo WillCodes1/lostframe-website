@@ -10,6 +10,7 @@ import Convergence from "@/components/sections/Convergence";
 import Thesis from "@/components/sections/Thesis";
 import Sources from "@/components/sections/Sources";
 import { EmailSlideIn, InlineEmailCapture } from "@/components/EmailCapture";
+import ShareBriefing from "@/components/ShareBriefing";
 import StudentCTA from "@/components/StudentCTA";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <InlineEmailCapture />
         <Thesis />
         <StudentCTA />
+        <ShareBriefing />
         <Sources />
       </main>
       <EmailSlideIn />

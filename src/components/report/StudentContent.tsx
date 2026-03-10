@@ -202,7 +202,7 @@ export default function StudentContent() {
               have used generative AI on assignments, with a significant portion using it to complete entire papers, problem sets, and coding projects.
             </p>
             <p>
-              The critical distinction is that this is not "advanced" usage. Students are not learning to orchestrate AI agents, build 
+              The critical distinction is that this is not &quot;advanced&quot; usage. Students are not learning to orchestrate AI agents, build 
               automated workflows, or critically evaluate model outputs. They are copying prompts into ChatGPT, pasting the output into a Word document, 
               and submitting it. This is the lowest possible tier of AI interaction: consumption, not creation.
             </p>

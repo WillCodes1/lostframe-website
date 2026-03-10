@@ -41,7 +41,7 @@ export default function HiddenBill() {
             Beneath the veneer of highly accessible, low-cost AI APIs lies a precarious and fundamentally unstable economic foundation.
             The current unit economics of AI inference are profoundly disconnected from their underlying physical, infrastructural, and developmental costs.
             Technology conglomerates and venture capital entities are actively <span className="text-[#1a1a2e] font-medium">subsidizing the cost of computation by massive margins</span> to
-            secure market share, creating an artificial pricing environment that defies traditional software economics <span className="text-xs text-[#7a7a85]">(The Information; Sequoia Capital "AI's $600B Question," 2025)</span>.
+            secure market share, creating an artificial pricing environment that defies traditional software economics <span className="text-xs text-[#7a7a85]">(The Information; Sequoia Capital &quot;AI&apos;s $600B Question,&quot; 2025)</span>.
           </p>
           <p>
             The strategic imperative driving this subsidy is ecosystem capture. Companies like OpenAI, Microsoft, Google, and Anthropic operate under the
@@ -52,7 +52,7 @@ export default function HiddenBill() {
           <p>
             The trajectory of AI capabilities is governed by precise, predictable mathematical relationships known as <span className="text-[#1a1a2e] font-medium">neural scaling laws</span>.
             As models transition from static text generation to continuous, inference-heavy reasoning paradigms (test-time compute), the energy and compute
-            required per query escalates dramatically <span className="text-xs text-[#7a7a85]">(Epoch AI; Kaplan et al., "Scaling Laws for Neural Language Models")</span>. This shifts the cost burden from the isolated, one-time capital expenditure of model pre-training to
+            required per query escalates dramatically <span className="text-xs text-[#7a7a85]">(Epoch AI; Kaplan et al., &quot;Scaling Laws for Neural Language Models&quot;)</span>. This shifts the cost burden from the isolated, one-time capital expenditure of model pre-training to
             the continuous, compounded operating expenditure of daily inference.
           </p>
         </div>

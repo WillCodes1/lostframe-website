@@ -110,10 +110,10 @@ export function EmailSlideIn() {
         >
           {/* Gold top border accent */}
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#b8860b] to-transparent" />
-          <div className="bg-[#0e0e18]/97 backdrop-blur-xl shadow-[0_-8px_40px_rgba(0,0,0,0.4)]">
-            <div className="max-w-4xl mx-auto px-4 py-3.5 flex flex-col sm:flex-row items-center gap-3 relative">
+          <div className="backdrop-blur-xl shadow-[0_-8px_40px_rgba(0,0,0,0.4)]" style={{ background: "linear-gradient(135deg, rgba(14,14,24,0.97) 0%, rgba(30,25,15,0.95) 60%, rgba(14,14,24,0.97) 100%)" }}>
+            <div className="max-w-4xl mx-auto px-4 pr-10 sm:px-6 sm:pr-14 py-3.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] sm:pb-3.5 flex flex-col sm:flex-row items-center gap-3 sm:gap-6 relative">
               {/* Left text */}
-              <div className="flex-1 min-w-0 text-center sm:text-left">
+              <div className="flex-1 min-w-0 text-center sm:text-left w-full">
                 <p className="text-sm font-semibold text-white tracking-wide">
                   The next briefing drops soon.
                 </p>
@@ -154,7 +154,7 @@ export function EmailSlideIn() {
 
               <button
                 onClick={() => { markDismissed(); setVisible(false); }}
-                className="absolute top-2.5 right-3 text-[#555568] hover:text-[#b8860b] transition-colors p-1"
+                className="absolute top-2.5 sm:top-1/2 sm:-translate-y-1/2 right-3 sm:right-4 text-[#555568] hover:text-[#b8860b] transition-colors p-1 pb-[max(0.25rem,env(safe-area-inset-bottom,0.25rem))] sm:pb-1"
                 aria-label="Dismiss"
               >
                 <X size={15} />

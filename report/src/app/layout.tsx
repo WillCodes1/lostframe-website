@@ -15,9 +15,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "The State of AI: 2026 Intelligence Briefing | Will Taubenheim",
+  title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
   description:
-    "An executive summary of Will Taubenheim's 248,000-word proprietary research paper on the collision of artificial intelligence, energy scarcity, semiconductor monopolies, and global labor market disruption. 35+ data visualizations, 200+ primary sources. Published by Lost Frame Ventures.",
+    "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
   keywords: [
     "State of AI 2026",
     "Will Taubenheim",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "The State of AI: 2026 Intelligence Briefing | Will Taubenheim",
+    title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
     description:
-      "An executive summary of Will Taubenheim's 248,000-word proprietary research paper into AI acceleration, energy scarcity, semiconductor monopolies, and labor disruption. By Will Taubenheim, Serial Tech Founder, AI Researcher, and 2x NASA Award Winner.",
+      "90% of AI is subsidized. True unemployment is 23.8%. One island controls 92% of chips. A 248,000-word research paper executive summary.",
     type: "article",
     authors: ["Will Taubenheim"],
     siteName: "Lost Frame Ventures",
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The State of AI: 2026 Intelligence Briefing | Will Taubenheim",
+    title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
     description:
-      "90% of AI is subsidized. One island makes 92% of chips. True unemployment is 23.8%. An executive summary of Will Taubenheim's 248,000-word proprietary research paper.",
+      "90% of AI is subsidized. True unemployment is 23.8%. One island controls 92% of chips. A 248,000-word research paper executive summary.",
   },
 };
 
@@ -90,8 +90,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: "The State of AI: 2026 Intelligence Briefing",
-              description: "An executive summary of Will Taubenheim's 248,000-word proprietary research paper into the collision of artificial intelligence, energy scarcity, semiconductor monopolies, and labor market disruption.",
+              headline: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
+              description: "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
               author: {
                 "@type": "Person",
                 name: "Will Taubenheim",
