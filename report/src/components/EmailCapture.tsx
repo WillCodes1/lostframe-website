@@ -111,7 +111,7 @@ export function EmailSlideIn() {
           {/* Gold top border accent */}
           <div className="h-px w-full bg-gradient-to-r from-transparent via-[#b8860b] to-transparent" />
           <div className="backdrop-blur-xl shadow-[0_-8px_40px_rgba(0,0,0,0.4)]" style={{ background: "linear-gradient(135deg, rgba(14,14,24,0.97) 0%, rgba(30,25,15,0.95) 60%, rgba(14,14,24,0.97) 100%)" }}>
-            <div className="max-w-4xl mx-auto px-4 pr-10 sm:px-6 sm:pr-14 py-3.5 pb-[max(0.875rem,env(safe-area-inset-bottom))] sm:pb-3.5 flex flex-col sm:flex-row items-center gap-3 sm:gap-6 relative">
+            <div className="max-w-4xl mx-auto px-4 pr-10 sm:px-6 sm:pr-14 py-3.5 pb-[max(1.5rem,env(safe-area-inset-bottom,1.5rem))] sm:pb-3.5 flex flex-col sm:flex-row items-center gap-3 sm:gap-6 relative">
               {/* Left text */}
               <div className="flex-1 min-w-0 text-center sm:text-left w-full">
                 <p className="text-sm font-semibold text-white tracking-wide">
