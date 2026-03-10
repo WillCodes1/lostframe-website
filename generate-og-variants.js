@@ -7,7 +7,7 @@ if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR);
 
 const designs = [
   {
-    name: "og-v1-dark-urgent",
+    name: "og-v5-dark-bold",
     html: `<!DOCTYPE html>
 <html>
 <head>
@@ -404,7 +404,6 @@ const designs = [
       <div class="stat-big">92%</div>
       <div class="stat-desc">Advanced chips sourced from a single island, 100 miles from China's military exercises.</div>
     </div>
-    <div class="right-footer">lostframe.ai/research</div>
   </div>
 </body>
 </html>`,

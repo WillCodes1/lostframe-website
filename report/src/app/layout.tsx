@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://lostframe.ai"),
   title: "The Foundations Are Cracking | 2026 State of AI Report",
   description:
-    "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
+    "90% of AI is subsidized. One island controls 92% of advanced chips, 100 miles from China. A $600B bubble sits beneath the AI economy. Read the 248,000-word intelligence report.",
   keywords: [
     "State of AI 2026",
     "Will Taubenheim",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Foundations Are Cracking | 2026 State of AI Report",
     description:
-      "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
+      "90% of AI is subsidized. One island controls 92% of advanced chips, 100 miles from China. A $600B bubble sits beneath the AI economy. Read the 248,000-word intelligence report.",
     type: "article",
     authors: ["Will Taubenheim"],
     siteName: "Lost Frame Ventures",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Foundations Are Cracking | 2026 State of AI Report",
     description:
-      "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
+      "90% of AI is subsidized. One island controls 92% of advanced chips, 100 miles from China. A $600B bubble sits beneath the AI economy. Read the 248,000-word intelligence report.",
     images: ["/research-og.png"],
   },
 };
@@ -118,7 +118,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Article",
               headline: "The Foundations Are Cracking | 2026 State of AI Report",
-              description: "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
+              description: "90% of AI is subsidized. One island controls 92% of advanced chips, 100 miles from China. A $600B bubble sits beneath the AI economy. Read the 248,000-word intelligence report.",
               author: {
                 "@type": "Person",
                 name: "Will Taubenheim",
