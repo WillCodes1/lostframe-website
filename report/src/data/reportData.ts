@@ -8,9 +8,9 @@ export const sections = [
   { id: "human-cost", label: "The Human Cost", number: 1 },
   { id: "hidden-bill", label: "The Hidden Bill", number: 2 },
   { id: "silicon-chokepoint", label: "The Silicon Chokepoint", number: 3 },
-  { id: "power-crisis", label: "The Power Crisis", number: 4 },
+  { id: "software-earthquake", label: "The Software Earthquake", number: 4 },
   { id: "convergence", label: "The Convergence", number: 5 },
-  { id: "software-earthquake", label: "The Software Earthquake", number: 6 },
+  { id: "power-crisis", label: "The Power Crisis", number: 6 },
   { id: "thesis", label: "The Thesis", number: 7 },
   { id: "what-to-do", label: "What You Should Do", number: 8 },
 ];
