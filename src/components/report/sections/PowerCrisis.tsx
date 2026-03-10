@@ -28,7 +28,7 @@ export default function PowerCrisis() {
   return (
     <section className="max-w-6xl mx-auto px-4 md:px-8 pt-8">
       <SectionHeader
-        number={5}
+        number={4}
         title="The Power Crisis"
         subtitle="By 2030, the US will consume more electricity on data processing than on all manufacturing combined. China has 37 nuclear reactors under construction. The US has zero."
         id="power-crisis"

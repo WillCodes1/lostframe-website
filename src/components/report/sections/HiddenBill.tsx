@@ -28,7 +28,7 @@ export default function HiddenBill() {
   return (
     <section className="max-w-6xl mx-auto px-4 md:px-8 pt-8">
       <SectionHeader
-        number={3}
+        number={2}
         title="The Hidden Bill"
         subtitle="The AI you use today is subsidized by 90 to 98 percent. The true cost is hidden beneath billions in venture capital. When the subsidies end, the shockwave will destabilize the entire software ecosystem."
         id="hidden-bill"

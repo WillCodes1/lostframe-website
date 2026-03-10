@@ -76,66 +76,6 @@ export default function Thesis() {
         </div>
       </FadeIn>
 
-      {/* What To Do - per audience */}
-      <FadeIn>
-        <div className="mb-16">
-          <h3 className="text-xl font-semibold text-[#1a1a2e] mb-8 text-center">What Should You Do?</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="stat-card">
-              <div className="text-xs text-[#b8860b] font-mono mb-4 tracking-wider">IF YOU&apos;RE AN INDIVIDUAL</div>
-              <ul className="space-y-3 text-sm text-[#4a4a5a]">
-                <li className="flex gap-2">
-                  <span className="text-[#b8860b] flex-shrink-0">→</span>
-                  <span>Develop AI fluency immediately. The 56% wage premium is real and growing.</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-[#b8860b] flex-shrink-0">→</span>
-                  <span>Become an AI Generalist. Broad cross-domain skills with AI orchestration trump narrow specialization.</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-[#b8860b] flex-shrink-0">→</span>
-                  <span>The entry-level corporate ladder is structurally broken. Traditional degrees alone are insufficient.</span>
-                </li>
-              </ul>
-            </div>
-            <div className="stat-card">
-              <div className="text-xs text-[#b8860b] font-mono mb-4 tracking-wider">IF YOU&apos;RE A BUSINESS OWNER</div>
-              <ul className="space-y-3 text-sm text-[#4a4a5a]">
-                <li className="flex gap-2">
-                  <span className="text-[#b8860b] flex-shrink-0">→</span>
-                  <span>Abandon flat-fee SaaS pricing. Move to usage-based or outcome-based models before the subsidy correction hits.</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-[#b8860b] flex-shrink-0">→</span>
-                  <span>Redesign workflows around human-AI teams. SMBs are achieving faster ROI than enterprises (Wharton study).</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-[#b8860b] flex-shrink-0">→</span>
-                  <span>Evaluate token efficiency and self-hosting thresholds. Your API costs could increase 10x overnight.</span>
-                </li>
-              </ul>
-            </div>
-            <div className="stat-card">
-              <div className="text-xs text-[#1a7a4c] font-mono mb-4 tracking-wider">IF YOU&apos;RE AN INVESTOR</div>
-              <ul className="space-y-3 text-sm text-[#4a4a5a]">
-                <li className="flex gap-2">
-                  <span className="text-[#1a7a4c] flex-shrink-0">→</span>
-                  <span>The infrastructure layer (energy, nuclear, commodities) will outperform the software layer in 2026-2028.</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-[#1a7a4c] flex-shrink-0">→</span>
-                  <span>Copper and silver structural deficits are real. These are the raw materials of the AI economy.</span>
-                </li>
-                <li className="flex gap-2">
-                  <span className="text-[#1a7a4c] flex-shrink-0">→</span>
-                  <span>Legacy SaaS at current valuations faces existential risk. Look for outcome-based AI-native companies.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </FadeIn>
-
       {/* Final CTA */}
       <FadeIn>
         <div className="text-center py-16">

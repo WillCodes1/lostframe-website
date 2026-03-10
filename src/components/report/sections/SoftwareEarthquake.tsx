@@ -46,7 +46,7 @@ export default function SoftwareEarthquake() {
   return (
     <section className="max-w-6xl mx-auto px-4 md:px-8">
       <SectionHeader
-        number={2}
+        number={6}
         title="The Software Earthquake"
         subtitle="AI has crossed from assistant to autonomous worker. The $285 billion SaaSocalypse has begun. Software no longer helps employees; it replaces them."
         id="software-earthquake"

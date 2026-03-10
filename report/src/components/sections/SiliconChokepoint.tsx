@@ -22,7 +22,7 @@ export default function SiliconChokepoint() {
   return (
     <section className="max-w-6xl mx-auto px-4 md:px-8 pt-8">
       <SectionHeader
-        number={4}
+        number={3}
         title="The Silicon Chokepoint"
         subtitle="One island, 100 miles from China, manufactures 92% of the world's most advanced semiconductors. If Taiwan goes dark, hospitals lose MRI machines and the Pentagon loses its weapons systems."
         id="silicon-chokepoint"

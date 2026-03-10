@@ -12,7 +12,7 @@ export default function Convergence() {
   return (
     <section className="max-w-6xl mx-auto px-4 md:px-8 pt-8">
       <SectionHeader
-        number={6}
+        number={5}
         title="The Convergence"
         subtitle="Every thread in this report, software acceleration, hidden economics, human displacement, silicon monopolies, energy deficits, and geopolitical conflict, is now colliding simultaneously."
         id="convergence"
