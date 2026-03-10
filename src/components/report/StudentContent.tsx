@@ -78,11 +78,10 @@ export default function StudentContent() {
     if (!emailVal) return;
     setEmailStatus("sending");
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/submit-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           email: emailVal,
           subject: "AI Report Student Guide: New Email Signup",
           from_name: "AI Report Student Guide",
