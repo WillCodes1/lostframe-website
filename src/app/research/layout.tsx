@@ -46,12 +46,21 @@ export const metadata: Metadata = {
     authors: ["Will Taubenheim"],
     siteName: "Lost Frame Ventures",
     locale: "en_US",
+    images: [
+      {
+        url: "/research-og.png",
+        width: 1200,
+        height: 630,
+        alt: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
     description:
       "90% of AI is subsidized. True unemployment is 23.8%. One island controls 92% of chips. A 248,000-word research paper executive summary.",
+    images: ["/research-og.png"],
   },
 };
 
