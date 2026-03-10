@@ -150,7 +150,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-[#fafaf8] text-[#1a1a2e]`}
       >
         {children}
-      <GoogleAnalytics gaId="G-4TZX0VLM9P" />
+      <GoogleAnalytics gaId="G-SC8FZD14TJ" />
       </body>
     </html>
   );
