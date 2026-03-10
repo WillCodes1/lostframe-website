@@ -12,8 +12,8 @@ const enterprise = [
     platinum: true,
   },
   {
-    title: "NASA Contract (2026)",
-    desc: "Second NASA award/contract — continuing partnership with NASA on advanced space technology systems",
+    title: "NASA Lunar Recycle Phase 2",
+    desc: "NASA Lunar Recycle Phase 2 Prototype & Digital Twin award — advanced prototype development and digital twin engineering for lunar systems",
     highlight: false,
     platinum: true,
   },
@@ -121,6 +121,11 @@ const experiences = [
     title: "VR Blackjack Experience",
     desc: "180° immersive casino with hand tracking — Meta hackathon entry",
     highlight: false,
+  },
+  {
+    title: "Escape the Backrooms",
+    desc: "Technical lead & lead developer (contracted via Lost Frame Development LLC to Fancy Games) — co-op horror game with 130K+ Steam reviews (Very Positive) and millions of unique players. A24 feature film based on the Backrooms IP universe releases May 29, 2026",
+    highlight: true,
   },
 ];
 
@@ -261,6 +266,10 @@ export default function Portfolio() {
               <Award className="w-3.5 h-3.5 text-gold" />
               <span className="text-xs font-medium text-foreground">DoD SERDP Award</span>
             </div>
+            <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold/10 border border-gold/20">
+              <Award className="w-3.5 h-3.5 text-gold" />
+              <span className="text-xs font-medium text-foreground">Keynote AI Speaker</span>
+            </div>
           </div>
         </AnimateOnScroll>
 
@@ -286,7 +295,7 @@ export default function Portfolio() {
             <AnimateOnScroll animation="fade-left" delay={200}>
               <PortfolioCard
                 title="Experiences & Games"
-                subtitle="2.5M+ users — creating immersive experiences that captivate millions"
+                subtitle="Millions of players — creating immersive experiences that captivate audiences worldwide"
                 items={experiences}
                 defaultExpanded={false}
               />
