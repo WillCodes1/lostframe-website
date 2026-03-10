@@ -63,7 +63,7 @@ export default function PasswordGate({ children }: { children: React.ReactNode }
           <div className="w-6 h-px bg-gradient-to-l from-transparent to-[#b8860b]/70" />
         </div>
 
-        <h1 className="text-xl font-bold text-[#1a1a2e] mb-2">Intelligence Briefing</h1>
+        <h1 className="text-xl font-bold text-[#1a1a2e] mb-2">State of AI Report</h1>
         <p className="text-xs text-[#7a7a85] mb-8 leading-relaxed">This document is access-restricted.</p>
 
         <div

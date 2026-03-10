@@ -116,7 +116,7 @@ export default function StudentContent() {
           <FadeSection>
             <div className="w-12 h-px bg-[#b8860b] mx-auto mb-6" />
             <p className="text-xs font-mono tracking-[0.2em] text-[#b8860b] uppercase mb-6">
-              From the State of AI: 2026 Intelligence Briefing
+              From the State of AI: 2026 State of AI Report
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a1a2e] leading-tight mb-6">
               Your Degree Is Being<br />

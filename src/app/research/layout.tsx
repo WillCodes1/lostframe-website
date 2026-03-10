@@ -3,7 +3,7 @@ import PasswordGate from "@/components/report/PasswordGate";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lostframe.ai"),
-  title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
+  title: "The Foundations Are Cracking | 2026 State of AI Report",
   description:
     "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
+    title: "The Foundations Are Cracking | 2026 State of AI Report",
     description:
       "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
     type: "article",
@@ -51,13 +51,13 @@ export const metadata: Metadata = {
         url: "/research-og.png",
         width: 1200,
         height: 630,
-        alt: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
+        alt: "The Foundations Are Cracking | 2026 State of AI Report",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Foundations Are Cracking | 2026 AI Intelligence Briefing",
+    title: "The Foundations Are Cracking | 2026 State of AI Report",
     description:
       "The AI economy is 90% subsidized. True unemployment is 23.8%. One island controls 92% of advanced chips. Read the executive summary of a 248,000-word proprietary research paper on what comes next.",
     images: ["/research-og.png"],

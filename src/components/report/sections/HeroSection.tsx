@@ -159,7 +159,7 @@ export default function HeroSection() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-xs font-mono tracking-[0.3em] text-[#b8860b] uppercase mb-6"
         >
-          Lost Frame Ventures / Intelligence Briefing
+          Lost Frame Ventures / State of AI Report
         </motion.p>
 
         {/* Main headline */}
