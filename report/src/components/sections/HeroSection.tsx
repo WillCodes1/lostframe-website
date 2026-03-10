@@ -110,7 +110,7 @@ function AnimatedMesh() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-[0] blur-[1px] sm:blur-0 opacity-50 sm:opacity-100" style={{ pointerEvents: "none" }} />;
+  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full z-[0] blur-[1px] sm:blur-[2px] opacity-50 sm:opacity-80" style={{ pointerEvents: "none" }} />;
 }
 
 export default function HeroSection() {
