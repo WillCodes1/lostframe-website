@@ -87,9 +87,9 @@ export default function TableOfContents() {
           <motion.a
             key={s.id}
             href={`#${s.id}`}
-            initial={{ opacity: 0, x: -20 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: i * 0.08, duration: 0.5 }}
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.3 }}
             className="group flex items-start gap-4 md:gap-6 py-4 border-b border-[#e5e2d9]/60 hover:bg-[#f5f4f0]/50 px-3 -mx-3 rounded-lg transition-all cursor-pointer"
           >
             <span
@@ -120,9 +120,9 @@ export default function TableOfContents() {
         {/* College Guide — 8th item, presented as a separate add-on */}
         <motion.a
           href={collegeGuide.href}
-          initial={{ opacity: 0, x: -20 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ delay: sections.length * 0.08, duration: 0.5 }}
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.3 }}
           className="group flex items-start gap-4 md:gap-6 py-4 px-3 -mx-3 rounded-lg transition-all cursor-pointer relative overflow-hidden"
           style={{ background: "linear-gradient(135deg, rgba(184,134,11,0.06) 0%, transparent 100%)", borderTop: "1px solid rgba(229,226,217,0.6)" }}
         >
