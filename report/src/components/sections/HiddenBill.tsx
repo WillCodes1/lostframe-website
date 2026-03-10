@@ -4,6 +4,7 @@ import SectionHeader from "@/components/SectionHeader";
 import FadeIn from "@/components/FadeIn";
 import ShareInsight from "@/components/ShareInsight";
 import AnimatedCounter from "@/components/AnimatedCounter";
+import Explainer from "@/components/Explainer";
 import {
   llmflationData,
   openAICashBurn,
@@ -38,22 +39,20 @@ export default function HiddenBill() {
       <FadeIn>
         <div className="prose-section mb-12 space-y-5 text-[#4a4a5a] leading-relaxed">
           <p>
-            Beneath the veneer of highly accessible, low-cost AI APIs lies a precarious and fundamentally unstable economic foundation.
-            The current unit economics of AI inference are profoundly disconnected from their underlying physical, infrastructural, and developmental costs.
-            Technology conglomerates and venture capital entities are actively <span className="text-[#1a1a2e] font-medium">subsidizing the cost of computation by massive margins</span> to
-            secure market share, creating an artificial pricing environment that defies traditional software economics <span className="text-xs text-[#7a7a85]">(The Information; Sequoia Capital &quot;AI&apos;s $600B Question,&quot; 2025)</span>.
+            Every time you use ChatGPT, Claude, or any AI tool, you are paying a fraction of what it actually costs to run.
+            The companies behind these tools are <span className="text-[#1a1a2e] font-medium">deliberately selling AI at a massive loss</span> to get as many people and businesses hooked as possible.
+            The real cost of running your AI queries is 10 to 50 times higher than what you are being charged <span className="text-xs text-[#7a7a85]">(The Information; Sequoia Capital &quot;AI&apos;s $600B Question,&quot; 2025)</span>.
           </p>
           <p>
-            The strategic imperative driving this subsidy is ecosystem capture. Companies like OpenAI, Microsoft, Google, and Anthropic operate under the
-            premise that AI is a &ldquo;winner-takes-all&rdquo; foundational layer. By heavily subsidizing the cost of API calls, these corporations encourage rapid
-            enterprise integration, effectively addicting the global software ecosystem to their specific models. The multi-billion dollar losses incurred
-            by selling inference below cost are treated not as operational failures, but as customer acquisition costs funded by seemingly bottomless venture capital <span className="text-xs text-[#7a7a85]">(SEC filings: OpenAI, Anthropic; Bank of America AI Research, 2026)</span>.
+            Why would they do this? Because AI is a &ldquo;winner-takes-all&rdquo; race.
+            Companies like OpenAI, Microsoft, Google, and Anthropic are burning through billions in <Explainer term="venture capital">Money invested by firms and wealthy backers into high-risk startups, betting they will become massively profitable later. If the bet fails, the money is gone.</Explainer> to
+            lock businesses into their platforms. Once your company builds its products on top of their AI, switching becomes extremely difficult and expensive.
+            These multi-billion dollar losses are not accidents. They are a deliberate strategy: get everyone dependent on cheap AI now, then raise prices later <span className="text-xs text-[#7a7a85]">(SEC filings: OpenAI, Anthropic; Bank of America AI Research, 2026)</span>.
           </p>
           <p>
-            The trajectory of AI capabilities is governed by precise, predictable mathematical relationships known as <span className="text-[#1a1a2e] font-medium">neural scaling laws</span>.
-            As models transition from static text generation to continuous, inference-heavy reasoning paradigms (test-time compute), the energy and compute
-            required per query escalates dramatically <span className="text-xs text-[#7a7a85]">(Epoch AI; Kaplan et al., &quot;Scaling Laws for Neural Language Models&quot;)</span>. This shifts the cost burden from the isolated, one-time capital expenditure of model pre-training to
-            the continuous, compounded operating expenditure of daily inference.
+            The problem is getting worse, not better. As AI models evolve from simple text responses to complex <Explainer term="reasoning and thinking">Newer AI models (like OpenAI&apos;s o3) don&apos;t just generate text instantly. They &quot;think&quot; through problems step-by-step before answering, which uses 5 to 10 times more computing power per question.</Explainer>,
+            the energy and computing power required per question is skyrocketing.
+            This means the cost of running AI is shifting from a one-time expense (building the model) to a continuous, compounding daily expense (answering every single question) <span className="text-xs text-[#7a7a85]">(Epoch AI; Kaplan et al., &quot;Scaling Laws for Neural Language Models&quot;)</span>.
           </p>
         </div>
       </FadeIn>
@@ -67,30 +66,30 @@ export default function HiddenBill() {
           </p>
           <div className="grid sm:grid-cols-3 gap-4">
             <div className="bg-white border border-[#e5e2d9] rounded-xl p-5 shadow-sm text-center">
-              <div className="text-xs font-mono text-[#1a7a4c] tracking-wider mb-3">ANNUALIZED REVENUE</div>
+              <div className="text-xs font-mono text-[#1a7a4c] tracking-wider mb-3">YEARLY REVENUE</div>
               <div className="text-3xl md:text-4xl font-bold text-[#1a1a2e] mb-1">$25B</div>
-              <div className="text-xs text-[#7a7a85]">Feb 2026 run rate <span className="text-[#7a7a85]">(Sacra)</span></div>
+              <div className="text-xs text-[#7a7a85]">What customers pay OpenAI per year</div>
             </div>
             <div className="bg-white border border-[#c0392b]/20 rounded-xl p-5 shadow-sm text-center">
-              <div className="text-xs font-mono text-[#c0392b] tracking-wider mb-3">INFERENCE COSTS (2026)</div>
+              <div className="text-xs font-mono text-[#c0392b] tracking-wider mb-3">COST TO RUN THE AI (2026)</div>
               <div className="text-3xl md:text-4xl font-bold gradient-text-danger mb-1">$14.1B</div>
-              <div className="text-xs text-[#7a7a85]">Raw compute to generate outputs</div>
+              <div className="text-xs text-[#7a7a85]">What it costs in electricity and hardware just to answer your questions</div>
             </div>
             <div className="bg-white border border-[#b8860b]/20 rounded-xl p-5 shadow-sm text-center">
-              <div className="text-xs font-mono text-[#b8860b] tracking-wider mb-3">REPORTED GROSS MARGIN</div>
+              <div className="text-xs font-mono text-[#b8860b] tracking-wider mb-3">PROFIT MARGIN (ON PAPER)</div>
               <div className="text-3xl md:text-4xl font-bold text-[#1a1a2e] mb-1">33%</div>
-              <div className="text-xs text-[#7a7a85]">Before R&D, comp, and debt</div>
+              <div className="text-xs text-[#7a7a85]">Before research, salaries, and debt payments</div>
             </div>
           </div>
           <div className="mt-4 p-4 rounded-lg bg-[#c0392b]/5 border border-[#c0392b]/15">
             <p className="text-sm text-[#4a4a5a] leading-relaxed mb-3">
-              That 33% gross margin looks reasonable until you factor in what it excludes: <strong className="text-[#1a1a2e]">$6.7 billion</strong> in R&D (model training),
-              <strong className="text-[#1a1a2e]"> $2.5 billion</strong> in stock-based compensation, and a staggering <strong className="text-[#1a1a2e]">$13 billion</strong> in total revenue share
-              commitments owed to Microsoft across 2026 and 2027 under their renegotiated partnership <span className="text-xs text-[#7a7a85]">(The Information; OpenAI financial disclosures, 2025)</span>.
+              That 33% profit margin looks reasonable on the surface. But it completely excludes: <strong className="text-[#1a1a2e]">$6.7 billion</strong> spent building and improving AI models,
+              <strong className="text-[#1a1a2e]"> $2.5 billion</strong> in employee compensation, and a staggering <strong className="text-[#1a1a2e]">$13 billion</strong> that OpenAI
+              owes Microsoft over 2026 and 2027 as part of their investment deal <span className="text-xs text-[#7a7a85]">(The Information; OpenAI financial disclosures, 2025)</span>.
             </p>
             <p className="text-sm text-[#4a4a5a] leading-relaxed">
-              For every $1.00 an enterprise pays for API access, OpenAI spends $0.37 on raw inference compute alone.
-              This is the most successful AI company in history, and it is structurally unprofitable. That gap is being filled by venture capital and Microsoft&apos;s balance sheet.
+              For every $1.00 a business pays to use OpenAI&apos;s AI, OpenAI spends $0.37 just on the electricity and hardware to generate the response.
+              This is the most successful AI company in history, and it is still losing money. That gap is being filled by investor cash and Microsoft&apos;s checkbook.
             </p>
           </div>
         </div>
@@ -99,15 +98,15 @@ export default function HiddenBill() {
       {/* API Pricing Reality */}
       <FadeIn>
         <div className="mb-12">
-          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">What You Pay vs. What It Costs</h3>
-          <p className="text-sm text-[#7a7a85] mb-4">Retail API pricing is engineered to capture market share, not to reflect physical costs.</p>
+          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">What You Pay vs. What It Actually Costs</h3>
+          <p className="text-sm text-[#7a7a85] mb-4">These are the prices businesses pay to plug AI into their apps and products. They are set artificially low to grab market share, not to reflect what it truly costs.</p>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[#e5e2d9]">
-                  <th className="text-left py-3 px-4 text-xs font-mono text-[#7a7a85]">MODEL</th>
-                  <th className="text-right py-3 px-4 text-xs font-mono text-[#7a7a85]">INPUT (per 1M tokens)</th>
-                  <th className="text-right py-3 px-4 text-xs font-mono text-[#7a7a85]">OUTPUT (per 1M tokens)</th>
+                  <th className="text-left py-3 px-4 text-xs font-mono text-[#7a7a85]">AI MODEL</th>
+                  <th className="text-right py-3 px-4 text-xs font-mono text-[#7a7a85]">READING COST (per 1M words)</th>
+                  <th className="text-right py-3 px-4 text-xs font-mono text-[#7a7a85]">WRITING COST (per 1M words)</th>
                 </tr>
               </thead>
               <tbody>
@@ -124,9 +123,12 @@ export default function HiddenBill() {
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-[#7a7a85] mt-2 italic">
+            Think of "tokens" as words. 1 million tokens is roughly 750,000 words, or about 10 full-length novels.
+          </p>
           <p className="text-xs text-[#7a7a85] mt-3">
-            These prices are maintained by running NVIDIA H100 arrays ($30,000 to $40,000 per GPU) at 70% of their 800-watt peak capacity during continuous inference batching.
-            Enterprise contracts with volume commitments receive additional undisclosed discounts, widening the subsidy gap further <span className="text-[#7a7a85]">(SemiAnalysis InferenceX v2)</span>.
+            Behind these prices are warehouses full of specialized AI chips (NVIDIA H100s, costing $30,000 to $40,000 each) running at near-maximum capacity 24/7.
+            Large corporate customers get even deeper secret discounts on top of these already-subsidized prices <span className="text-[#7a7a85]">(SemiAnalysis InferenceX v2)</span>.
           </p>
         </div>
       </FadeIn>
@@ -135,14 +137,14 @@ export default function HiddenBill() {
       <FadeIn>
         <div className="relative mb-16">
           <div className="bg-white border border-[#e5e2d9] rounded-xl p-6 md:p-10 overflow-hidden shadow-sm">
-            <h3 className="text-lg font-semibold text-[#1a1a2e] mb-8 text-center">The Inference Subsidy Iceberg</h3>
+            <h3 className="text-lg font-semibold text-[#1a1a2e] mb-8 text-center">The AI Pricing Iceberg</h3>
             <div className="flex flex-col items-center">
               {/* Above water */}
               <div className="relative w-full max-w-md">
                 <div className="bg-gradient-to-b from-[#b8860b]/10 to-[#b8860b]/3 border border-[#b8860b]/20 rounded-t-xl p-6 text-center">
                   <div className="text-xs text-[#b8860b] font-mono mb-2 tracking-wider">WHAT YOU PAY</div>
                   <div className="text-2xl md:text-3xl font-bold text-[#1a1a2e]">{icebergData.visible.range}</div>
-                  <div className="text-xs text-[#7a7a85] mt-2">per million tokens (API price)</div>
+                  <div className="text-xs text-[#7a7a85] mt-2">per million words (what businesses are charged)</div>
                 </div>
 
                 {/* Waterline */}
@@ -156,7 +158,7 @@ export default function HiddenBill() {
                 <div className="bg-gradient-to-b from-[#c0392b]/5 to-[#c0392b]/10 border border-[#c0392b]/15 rounded-b-xl p-8 md:p-12 text-center">
                   <div className="text-xs text-[#c0392b] font-mono mb-2 tracking-wider">TRUE COST</div>
                   <div className="text-3xl md:text-5xl font-bold text-[#1a1a2e]">{icebergData.hidden.range}</div>
-                  <div className="text-xs text-[#7a7a85] mt-2">per million tokens (fully burdened)</div>
+                  <div className="text-xs text-[#7a7a85] mt-2">per million words (what it actually costs to produce)</div>
                   <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#c0392b]/10 border border-[#c0392b]/15">
                     <span className="text-[#c0392b] font-bold text-lg">{icebergData.subsidyPercent}</span>
                     <span className="text-[#4a4a5a] text-sm">subsidized</span>
@@ -165,7 +167,7 @@ export default function HiddenBill() {
               </div>
             </div>
             <p className="text-center text-sm text-[#7a7a85] mt-8 max-w-lg mx-auto">
-              For every $1 a SaaS company pays for AI tokens, the provider absorbs $9 to $49 in actual physical, infrastructural, and developmental costs.
+              For every $1 a business pays for AI, the provider absorbs $9 to $49 in real costs: electricity, chips, cooling, buildings, and research.
             </p>
           </div>
           <ShareInsight
@@ -178,9 +180,9 @@ export default function HiddenBill() {
       {/* LLMflation Chart */}
       <FadeIn>
         <div className="mb-16">
-          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">LLMflation: The 10x Annual Cost Deflation</h3>
+          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">AI Prices Are Dropping 10x Every Year</h3>
           <p className="text-sm text-[#7a7a85] mb-6">
-            The cost to access a specific tier of intelligence decreases by a factor of 10 every single year. But this deflation is driven by subsidies, not just efficiency.
+            The price you pay for AI keeps plummeting, roughly 10x cheaper every year for the same quality. That sounds great, but most of the drop comes from companies choosing to lose more money, not from actual efficiency gains.
           </p>
           <div className="bg-white border border-[#e5e2d9] rounded-xl p-4 md:p-6 shadow-sm">
             <ResponsiveContainer width="100%" height={320}>
@@ -215,7 +217,7 @@ export default function HiddenBill() {
               </LineChart>
             </ResponsiveContainer>
             <div className="text-center text-xs text-[#7a7a85] mt-2">
-              Log scale. Cost per million tokens for equivalent capability tier. Source: a16z, API pricing data.
+              Cost per million words for the same quality of AI. The scale is compressed (each step = 10x). Source: a16z, API pricing data.
             </div>
           </div>
         </div>
@@ -224,9 +226,9 @@ export default function HiddenBill() {
       {/* OpenAI Cash Burn */}
       <FadeIn>
         <div className="mb-16">
-          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">OpenAI&apos;s Financial Paradox</h3>
+          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">OpenAI&apos;s Money Problem</h3>
           <p className="text-sm text-[#7a7a85] mb-6">
-            $20B in revenue. $12B loss in a single quarter. Projected cumulative cash burn of $665B before breakeven in 2030.
+            OpenAI makes $20 billion per year but lost $12 billion in a single quarter. At this rate, they will burn through $665 billion in total before finally becoming profitable around 2030.
           </p>
           <div className="bg-white border border-[#e5e2d9] rounded-xl p-4 md:p-6 shadow-sm">
             <ResponsiveContainer width="100%" height={320}>
@@ -248,7 +250,7 @@ export default function HiddenBill() {
               </BarChart>
             </ResponsiveContainer>
             <div className="text-center text-xs text-[#7a7a85] mt-2">
-              Source: Leaked internal financial projections, SEC filings, industry estimates.
+              Green bars = profit. Red bars = money lost. Source: Financial projections, SEC filings, industry estimates.
             </div>
           </div>
           <ShareInsight
@@ -261,24 +263,24 @@ export default function HiddenBill() {
       {/* SaaS Unit Economics */}
       <FadeIn>
         <div className="mb-16">
-          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">SaaS Unit Economics: When Subsidies End</h3>
+          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">What Happens to Your Software When Subsidies End</h3>
           <p className="text-sm text-[#7a7a85] mb-6">
-            Modeling a customer support SaaS processing 1 million AI tickets per day. Current subsidized costs vs. true unsubsidized costs.
+            Imagine a customer support app that uses AI to handle 1 million help tickets per day. Here is what that costs today vs. what it would cost if companies stopped subsidizing the AI.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="stat-card text-center">
-              <div className="text-xs text-[#1a7a4c] font-mono mb-3 tracking-wider">SUBSIDIZED (CURRENT)</div>
+              <div className="text-xs text-[#1a7a4c] font-mono mb-3 tracking-wider">TODAY&apos;S PRICE (DISCOUNTED)</div>
               <div className="text-4xl md:text-5xl font-bold text-[#1a1a2e]">
                 <AnimatedCounter end={4.33} prefix="$" suffix="M" decimals={2} /><span className="text-lg text-[#7a7a85]">/yr</span>
               </div>
-              <div className="text-sm text-[#7a7a85] mt-2">Manageable for funded startups</div>
+              <div className="text-sm text-[#7a7a85] mt-2">Affordable while investors foot the bill</div>
             </div>
             <div className="stat-card text-center border-[#c0392b]/20">
-              <div className="text-xs text-[#c0392b] font-mono mb-3 tracking-wider">UNSUBSIDIZED (TRUE COST)</div>
+              <div className="text-xs text-[#c0392b] font-mono mb-3 tracking-wider">REAL PRICE (NO DISCOUNT)</div>
               <div className="text-4xl md:text-5xl font-bold text-[#1a1a2e]">
                 <AnimatedCounter end={43.3} prefix="$" suffix="M" decimals={1} /><span className="text-lg text-[#7a7a85]">/yr</span>
               </div>
-              <div className="text-sm text-[#c0392b]/80 mt-2">10x increase. Existential threat.</div>
+              <div className="text-sm text-[#c0392b]/80 mt-2">10x more expensive. Most companies cannot survive this.</div>
             </div>
           </div>
         </div>
@@ -287,9 +289,9 @@ export default function HiddenBill() {
       {/* Energy Per Query */}
       <FadeIn>
         <div className="mb-16">
-          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">Energy Cost Per Query Type</h3>
+          <h3 className="text-lg font-semibold text-[#1a1a2e] mb-2">How Much Electricity Each AI Task Uses</h3>
           <p className="text-sm text-[#7a7a85] mb-6">
-            The physical energy equation varies wildly. Video generation consumes 3,333x more energy than basic text.
+            Not all AI tasks cost the same to run. Generating a short video uses 3,333 times more electricity than answering a simple text question.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {energyPerQuery.map((e, i) => (
@@ -302,8 +304,11 @@ export default function HiddenBill() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-[#7a7a85] mt-4 italic">
+            Wh = watt-hours, kWh = kilowatt-hours. For context, 1 kWh is enough to run a microwave for about an hour, or charge your phone roughly 30 times.
+          </p>
           <ShareInsight
-            text="Generating a 5-second AI video consumes 1 kWh of energy. That's 3,333x more than a basic text query. The physical cost of intelligence is staggering."
+            text="Generating a 5-second AI video uses as much electricity as charging your phone 30 times. That's 3,333x more energy than a simple text question."
             sectionId="hidden-bill"
           />
         </div>
@@ -316,7 +321,7 @@ export default function HiddenBill() {
             <AnimatedCounter end={665} prefix="$" suffix="B" />
           </div>
           <p className="text-lg text-[#7a7a85] max-w-xl mx-auto">
-            Projected cumulative cash burn for OpenAI alone before reaching breakeven. The entire industry subsidy is unsustainable.
+            That is how much money OpenAI is projected to burn through before it can stand on its own. This is just one company. The entire AI industry is running on borrowed time and borrowed money.
           </p>
         </div>
       </FadeIn>
