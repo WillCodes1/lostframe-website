@@ -36,19 +36,17 @@ export default function HumanCost() {
       <FadeIn>
         <div className="prose-section mb-12 space-y-5 text-[#4a4a5a] leading-relaxed">
           <p>
-            The global labor market is undergoing a structural transformation of unprecedented scale and velocity. By demonstrating
-            superior capabilities in divergent thinking, pattern recognition, and the synthesis of codifiable knowledge, AI is
-            directly targeting the white-collar knowledge economy <span className="text-xs text-[#7a7a85]">(McKinsey Global Institute, 2025; World Economic Forum Future of Jobs Report, 2025)</span>.
-            The initial waves of this disruption are already visible in the
-            systematic reduction of hiring for entry-level cognitive tasks and the aggressive restructuring of major technology corporations.
+            The labor market is changing faster than at any point in modern history. AI is no longer just automating factory
+            floors or data entry. It is now outperforming humans at the core tasks of the white-collar economy: writing, analysis,
+            coding, and customer service <span className="text-xs text-[#7a7a85]">(McKinsey Global Institute, 2025; World Economic Forum Future of Jobs Report, 2025)</span>.
+            The first casualties are entry-level knowledge workers, and the restructuring of major corporations is already underway.
           </p>
           <p>
-            For decades, the traditional white-collar career progression required companies to hire recent graduates and pay them to
-            perform routine, repetitive entry-level tasks. Through this rote work, graduates slowly acquired <span className="text-[#1a1a2e] font-medium">tacit knowledge</span>,
-            eventually climbing the corporate ladder. AI has completely disrupted this pipeline. Firms are realizing that paying a
-            recent graduate an average starting salary of $68,000 <span className="text-xs text-[#7a7a85]">(NACE Salary Survey, 2025)</span> to perform basic coding, drafting, or data analysis is profoundly
-            cost-ineffective when an AI agent can perform the same task instantly, flawlessly, and at a fraction of the cost.
-            The entry-level rung of the corporate ladder has been structurally removed <span className="text-xs text-[#7a7a85]">(Burning Glass Institute; Federal Reserve Bank of New York)</span>.
+            For decades, companies hired recent graduates to do routine work: basic coding, drafting reports, processing data.
+            Through that repetitive work, new hires slowly built real expertise and climbed the corporate ladder. AI has broken
+            this pipeline. Why pay a recent graduate $68,000 a year <span className="text-xs text-[#7a7a85]">(NACE Salary Survey, 2025)</span> to do work that an AI agent
+            now handles instantly and at a fraction of the cost? The entry-level rung of the corporate ladder has been
+            removed <span className="text-xs text-[#7a7a85]">(Burning Glass Institute; Federal Reserve Bank of New York)</span>.
           </p>
         </div>
       </FadeIn>

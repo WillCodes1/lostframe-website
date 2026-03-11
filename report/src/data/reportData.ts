@@ -322,7 +322,7 @@ export const losers = [
   {
     entity: "Legacy SaaS Companies",
     label: "The Obsolete",
-    reason: "$300B market cap evaporated in the SaaSocalypse, per-seat model broken, agents replace interfaces",
+    reason: "$285B+ market cap evaporated in the SaaSocalypse, per-seat model broken, agents replace interfaces",
   },
 ];
 

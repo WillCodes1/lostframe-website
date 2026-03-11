@@ -32,24 +32,24 @@ export default function SiliconChokepoint() {
       <FadeIn>
         <div className="prose-section mb-12 space-y-5 text-[#4a4a5a] leading-relaxed">
           <p>
-            As of early 2026, the global semiconductor industry has decisively transitioned into the &ldquo;Angstrom Era,&rdquo; marking a paradigm
-            shift in both transistor architecture and global economic reliance. The shift from 3nm to 2nm marks the deprecation of
-            FinFET architectures in favor of <span className="text-[#1a1a2e] font-medium">Gate-All-Around (GAA) nanosheet technology</span>, a fundamental overhaul of
-            device physics that mitigates current leakage by surrounding the transistor channel entirely with a gate <span className="text-xs text-[#7a7a85]">(IEEE Spectrum; TSMC Technology Symposium, 2025)</span>.
+            The chips that power AI are getting impossibly small. In 2026, the semiconductor industry crossed into what engineers
+            call the <span className="text-[#1a1a2e] font-medium">&ldquo;Angstrom Era&rdquo;</span>: transistors measured in billionths of a meter. The leap from 3-nanometer
+            to 2-nanometer chips required an entirely new transistor design called <span className="text-[#1a1a2e] font-medium">Gate-All-Around (GAA)</span>,
+            which wraps the electrical gate completely around the channel to prevent energy from leaking out at these microscopic
+            scales <span className="text-xs text-[#7a7a85]">(IEEE Spectrum; TSMC Technology Symposium, 2025)</span>.
           </p>
           <p>
-            The global semiconductor market is projected to reach <span className="text-[#1a1a2e] font-medium">$975 billion in annual sales in 2026</span>, a historic apex propelled
-            by a 26% growth rate fueled predominantly by AI infrastructure investments. Yet this hypergrowth masks a structural divergence:
-            while high-value AI chips now drive roughly half of the industry&apos;s total revenue, they represent less than 0.2% of total global
-            unit volume. This hyper-concentration of value in low-volume, sub-3nm logic chips elevates the systemic risk profile of
-            the global economy, directly linking trillions of dollars in downstream technological utility to a handful of fabrication facilities <span className="text-xs text-[#7a7a85]">(SIA World Semiconductor Trade Statistics; SEMI Industry Report, 2026)</span>.
+            The global chip market will hit <span className="text-[#1a1a2e] font-medium">$975 billion in 2026</span>, growing 26% in a single year,
+            almost entirely because of AI. But here is the catch: the AI chips generating half of that revenue make up less
+            than 0.2% of total chip volume. A tiny number of ultra-advanced chips, made in a tiny number of factories, now
+            underpin the entire digital economy <span className="text-xs text-[#7a7a85]">(SIA World Semiconductor Trade Statistics; SEMI Industry Report, 2026)</span>.
           </p>
           <p>
-            For Taiwan, this concentration represents far more than economic prosperity; it constitutes a geopolitical survival strategy
-            known as the <span className="text-[#1a1a2e] font-medium">&ldquo;Silicon Shield.&rdquo;</span> By embedding itself as the indispensable foundation of the global digital economy,
-            Taiwan ensures that any kinetic military action by the PRC would trigger an immediate, catastrophic global economic collapse.
-            To protect this leverage, Taiwan aggressively legislates against technology bleeding through its &ldquo;N-2&rdquo; export control rule,
-            ensuring overseas fabs always trail domestic capabilities by at least two process generations <span className="text-xs text-[#7a7a85]">(CSIS; Brookings Institution Taiwan Semiconductor Analysis)</span>.
+            For Taiwan, this concentration is a deliberate survival strategy known as the <span className="text-[#1a1a2e] font-medium">&ldquo;Silicon Shield.&rdquo;</span> By
+            making itself essential to every technology on Earth, Taiwan ensures that any military attack on the island would
+            trigger immediate global economic collapse. To protect this leverage, Taiwan enforces an &ldquo;N-2&rdquo; rule: any chip
+            factory built overseas must use technology at least two generations behind what Taiwan runs
+            domestically <span className="text-xs text-[#7a7a85]">(CSIS; Brookings Institution Taiwan Semiconductor Analysis)</span>.
           </p>
         </div>
       </FadeIn>

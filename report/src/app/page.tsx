@@ -12,6 +12,7 @@ import WhatYouShouldDo from "@/components/sections/WhatYouShouldDo";
 import Sources from "@/components/sections/Sources";
 import ReportContact from "@/components/sections/ReportContact";
 import { EmailSlideIn, InlineEmailCapture } from "@/components/EmailCapture";
+import Synopsis from "@/components/sections/Synopsis";
 import ShareBriefing from "@/components/ShareBriefing";
 import StudentCTA from "@/components/StudentCTA";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <ProgressBar />
       <main className="relative font-[family-name:var(--font-geist-sans)]">
         <HeroSection />
+        <Synopsis />
         <TableOfContents />
         <HumanCost />
         <HiddenBill />

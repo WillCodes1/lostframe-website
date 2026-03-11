@@ -56,18 +56,18 @@ export default function SoftwareEarthquake() {
       <FadeIn>
         <div className="prose-section mb-12 space-y-5 text-[#4a4a5a] leading-relaxed">
           <p>
-            As of 2026, the artificial intelligence paradigm has definitively shifted from generative assistance to agentic autonomy.
-            While early iterations of generative AI functioned primarily on the &ldquo;read path&rdquo; (summarizing text, generating code snippets, answering queries
-            under direct human supervision), the current generation operates on the <span className="text-[#1a1a2e] font-medium">&ldquo;write path.&rdquo;</span> These
-            autonomous systems execute multi-step workflows, make dynamic decisions based on contextual rules, interact directly with enterprise databases,
-            and initiate actions across interconnected software ecosystems without human prompting <span className="text-xs text-[#7a7a85]">(Sequoia Capital AI Report, 2025; a16z State of AI, 2026)</span>.
+            AI has crossed a critical threshold. Early versions could summarize text or answer questions, but they always needed a human
+            watching over them. The current generation is different. These systems execute entire workflows on their own: booking meetings,
+            processing invoices, writing and deploying code, resolving customer tickets. They make decisions, interact with databases,
+            and take action across software systems without anyone pressing a
+            button <span className="text-xs text-[#7a7a85]">(Sequoia Capital AI Report, 2025; a16z State of AI, 2026)</span>.
           </p>
           <p>
-            In February 2026, global financial markets witnessed the rapid evaporation of nearly <span className="text-[#1a1a2e] font-medium">$285 billion in market
-            capitalization</span> from legacy SaaS firms. This violent repricing event, colloquially dubbed the <span className="text-[#1a1a2e] font-medium">&ldquo;SaaSocalypse,&rdquo;</span> represents
-            the moment investors realized the fundamental unit of value in software had irreversibly changed. When an AI agent can natively execute multi-step
-            workflows via backend APIs without ever requiring a graphical user interface, the human &ldquo;seat&rdquo; and the subscription fee attached to it becomes
-            entirely obsolete <span className="text-xs text-[#7a7a85]">(Bloomberg Intelligence; Goldman Sachs Equity Research, Feb 2026)</span>.
+            In February 2026, investors figured this out all at once. Nearly <span className="text-[#1a1a2e] font-medium">$285 billion in market
+            capitalization</span> evaporated from legacy software companies in what markets now call the <span className="text-[#1a1a2e] font-medium">&ldquo;SaaSocalypse.&rdquo;</span> The
+            logic is simple: if an AI agent can do the work directly through a backend API, you no longer need a human sitting in
+            front of a dashboard. The per-seat subscription model that powered the entire SaaS industry is
+            breaking <span className="text-xs text-[#7a7a85]">(Bloomberg Intelligence; Goldman Sachs Equity Research, Feb 2026)</span>.
           </p>
         </div>
       </FadeIn>

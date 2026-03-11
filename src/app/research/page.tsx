@@ -12,6 +12,7 @@ import WhatYouShouldDo from "@/components/report/sections/WhatYouShouldDo";
 import Sources from "@/components/report/sections/Sources";
 import ReportContact from "@/components/report/sections/ReportContact";
 import { EmailSlideIn, InlineEmailCapture } from "@/components/report/EmailCapture";
+import Synopsis from "@/components/report/sections/Synopsis";
 import ShareBriefing from "@/components/report/ShareBriefing";
 import StudentCTA from "@/components/report/StudentCTA";
 
@@ -21,6 +22,7 @@ export default function ResearchPage() {
       <ProgressBar />
       <main className="relative">
         <HeroSection />
+        <Synopsis />
         <TableOfContents />
         <HumanCost />
         <HiddenBill />
